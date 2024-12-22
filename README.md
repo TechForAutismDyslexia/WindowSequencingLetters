@@ -1,2 +1,2 @@
-# wsLetterGameTAD-Version3
+# Window Sequencing Letters Card Game
  
