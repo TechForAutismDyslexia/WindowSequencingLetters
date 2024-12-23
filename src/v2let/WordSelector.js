@@ -16,7 +16,8 @@ const WordSelector = () => {
   useEffect(() => {
     const fetchWordSessions = async () => {
       try {
-        const response = await axios.get('http://localhost:4000/api/word-sessions');
+        const response = await axios.get('https://api.joywithlearning.com/api/windowsequencing/word-sessions');
+        console.log('Word sessions:', response.data);
         if (Array.isArray(response.data) && response.data.length > 0) {
           setSessions(response.data); // Update sessions state
           const allWords = response.data.reduce((acc, item) => {
